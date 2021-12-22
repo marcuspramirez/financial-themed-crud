@@ -1,0 +1,25 @@
+<h1>Mutual Funds</h1>
+<table class="container mutualTable" *ngFor="let fund of funds">
+    <a [routerLink]="['/funds', fund.id]"></a>
+    <tr>
+
+        <th>Fund Name</th>
+        
+        <th>Risk Potential</th>
+        
+        <th>Current Value</th>
+        
+        </tr>
+        <tr>
+
+            <td [routerLink]="['/funds', fund.id]">{{fund.title}}</td>
+            
+            <td>{{fund.author}}</td>
+            
+            <td>$17.00</td>
+            
+            </tr>
+
+            <button class="btn btn-primary" (click)="edit(fund.id)">EDIT</button>
+            <button class="btn btn-danger" (click)="delete(fund.id)">DELETE</button>
+</table>

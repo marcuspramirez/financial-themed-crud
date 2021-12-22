@@ -1,0 +1,44 @@
+<h1 class="visually-hidden">Heroes examples</h1>
+
+<div class="px-4 py-5 my-5 text-center">
+  <img
+    class="d-block mx-auto mb-4"
+    src="https://media.istockphoto.com/photos/drawing-picture-id173243174?k=6&m=173243174&s=612x612&w=0&h=eIgwpVyi-4mgcooCLrPYxqKlP1cyW9-mdjM0kt0FJ2A="
+    alt=""
+    width="72"
+    height="57"
+  />
+  <h1 class="display-5 fw-bold">Edit This Mutual Fund</h1>
+  <div class="container">
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Fund Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="formGroupExampleInput"
+        [(ngModel)]="fund.title"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Fund Risk</label>
+      <input
+        type="text"
+        class="form-control"
+        id="formGroupExampleInput2"
+        [(ngModel)]="fund.author"
+      />
+    </div>
+  </div>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Make the changes you would like to see</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button
+        type="button"
+        class="btn btn-primary btn-lg px-4 gap-3"
+        (click)="update()"
+      >
+        Update
+      </button>
+    </div>
+  </div>
+</div>
