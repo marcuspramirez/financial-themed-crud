@@ -7,7 +7,7 @@ import { EditfundComponent } from './editfund/editfund.component';
 
 const routes: Routes = [
   {path: "funds", component: FundsComponent},
-  {path: "", component: HomeComponent},
+  {path: "home", component: HomeComponent},
   {path: "funds/:id/edit", component: EditfundComponent},
   {path: "funds/:id", component: FundComponent},
 
