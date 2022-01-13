@@ -4,9 +4,12 @@ import { FundsComponent } from './funds/funds.component';
 import { FundComponent } from './fund/fund.component';
 import { HomeComponent } from './home/home.component';
 import { EditfundComponent } from './editfund/editfund.component';
+import { AddFundComponent } from './add-fund/add-fund.component';
 
 const routes: Routes = [
   {path: "funds", component: FundsComponent},
+  {path: "", component: HomeComponent},
+  {path: "addfund", component: AddFundComponent},
   {path: "home", component: HomeComponent},
   {path: "funds/:id/edit", component: EditfundComponent},
   {path: "funds/:id", component: FundComponent},

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FundService } from '../fund.service';
 import { Fund } from '../fund/fund.model';
-import { FormsModule } from '@angular/forms';
 
 
 @Component({

@@ -1,6 +1,7 @@
 export interface Fund {
-    title?: string,
-    author?: string,
-    description?: string,
+    name?: string,
+    value?: number,
+    return?: number,
     id?: number;
+    
 }

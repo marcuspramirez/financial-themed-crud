@@ -14,7 +14,7 @@ export class FundsComponent implements OnInit {
   constructor(private fundService: FundService, private router: Router, private route:ActivatedRoute) { }
 
   funds:Fund[] = [];
-  fund:Fund = {}
+ 
 
   ngOnInit(): void {
     this.fundService.getFunds().subscribe(payload => {

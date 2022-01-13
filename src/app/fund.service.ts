@@ -8,6 +8,8 @@ import { Fund } from './fund/fund.model';
 })
 export class FundService {
 
+ 
+
   url = "http://localhost:8082/api/funds/"
 
   constructor(private http:HttpClient) { }
@@ -24,13 +26,18 @@ export class FundService {
 
   updateFund(fund: Fund): Observable<any>{
     
-    return this.http.patch(`http://localhost:8082/api/funds/` + fund.id, fund);
+    return this.http.patch(this.url + fund.id, fund);
 
   }
 
   deleteFund(id: number): Observable<any>{
     return this.http.delete(this.url + id);
   }
+
+  addFund(fund: Fund): Observable<any>{
+    return this.http.post(this.url, fund);
+  }
+
 
 
 }

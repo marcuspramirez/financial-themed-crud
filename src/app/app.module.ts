@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EditfundComponent } from './editfund/editfund.component';
 import { FormsModule } from '@angular/forms';
+import { AddFundComponent } from './add-fund/add-fund.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FormsModule } from '@angular/forms';
     FundComponent,
     FundsComponent,
     NavbarComponent,
-    EditfundComponent
+    EditfundComponent,
+    AddFundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
