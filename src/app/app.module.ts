@@ -12,6 +12,7 @@ import { EditfundComponent } from './editfund/editfund.component';
 import { FormsModule } from '@angular/forms';
 import { AddFundComponent } from './add-fund/add-fund.component';
 import { FooterComponent } from './footer/footer.component';
+import { ServicesPageComponent } from './services-page/services-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     EditfundComponent,
     AddFundComponent,
-    FooterComponent
+    FooterComponent,
+    ServicesPageComponent
   ],
   imports: [
     BrowserModule,
